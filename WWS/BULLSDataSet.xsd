@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BULLSDataSet" targetNamespace="http://tempuri.org/BULLSDataSet.xsd" xmlns:mstns="http://tempuri.org/BULLSDataSet.xsd" xmlns="http://tempuri.org/BULLSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="BULLSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BULLSConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WWS.My.MySettings.GlobalReference.Default.BULLSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_bulls_viewTableAdapter" GeneratorDataComponentClassName="vw_bulls_viewTableAdapter" Name="vw_bulls_view" UserDataComponentName="vw_bulls_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BULLSConnectionString (MySettings)" DbObjectName="BULLS.dbo.vw_bulls_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CODENO, CODENAME, REGNAME, DOB, Ptam, Ptap, PTAT, Tpi FROM dbo.vw_bulls_view</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CODENO" DataSetColumn="CODENO" />
+              <Mapping SourceColumn="CODENAME" DataSetColumn="CODENAME" />
+              <Mapping SourceColumn="REGNAME" DataSetColumn="REGNAME" />
+              <Mapping SourceColumn="DOB" DataSetColumn="DOB" />
+              <Mapping SourceColumn="Ptam" DataSetColumn="Ptam" />
+              <Mapping SourceColumn="Ptap" DataSetColumn="Ptap" />
+              <Mapping SourceColumn="PTAT" DataSetColumn="PTAT" />
+              <Mapping SourceColumn="Tpi" DataSetColumn="Tpi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BULLSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BULLSDataSet" msprop:Generator_UserDSName="BULLSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_bulls_view" msprop:Generator_TableClassName="vw_bulls_viewDataTable" msprop:Generator_TableVarName="tablevw_bulls_view" msprop:Generator_TablePropName="vw_bulls_view" msprop:Generator_RowDeletingName="vw_bulls_viewRowDeleting" msprop:Generator_RowChangingName="vw_bulls_viewRowChanging" msprop:Generator_RowEvHandlerName="vw_bulls_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_bulls_viewRowDeleted" msprop:Generator_UserTableName="vw_bulls_view" msprop:Generator_RowChangedName="vw_bulls_viewRowChanged" msprop:Generator_RowEvArgName="vw_bulls_viewRowChangeEvent" msprop:Generator_RowClassName="vw_bulls_viewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODENO" msprop:Generator_ColumnVarNameInTable="columnCODENO" msprop:Generator_ColumnPropNameInRow="CODENO" msprop:Generator_ColumnPropNameInTable="CODENOColumn" msprop:Generator_UserColumnName="CODENO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CODENAME" msprop:Generator_ColumnVarNameInTable="columnCODENAME" msprop:Generator_ColumnPropNameInRow="CODENAME" msprop:Generator_ColumnPropNameInTable="CODENAMEColumn" msprop:Generator_UserColumnName="CODENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REGNAME" msprop:Generator_ColumnVarNameInTable="columnREGNAME" msprop:Generator_ColumnPropNameInRow="REGNAME" msprop:Generator_ColumnPropNameInTable="REGNAMEColumn" msprop:Generator_UserColumnName="REGNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOB" msprop:Generator_ColumnVarNameInTable="columnDOB" msprop:Generator_ColumnPropNameInRow="DOB" msprop:Generator_ColumnPropNameInTable="DOBColumn" msprop:Generator_UserColumnName="DOB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ptam" msprop:Generator_ColumnVarNameInTable="columnPtam" msprop:Generator_ColumnPropNameInRow="Ptam" msprop:Generator_ColumnPropNameInTable="PtamColumn" msprop:Generator_UserColumnName="Ptam" type="xs:int" minOccurs="0" />
+              <xs:element name="Ptap" msprop:Generator_ColumnVarNameInTable="columnPtap" msprop:Generator_ColumnPropNameInRow="Ptap" msprop:Generator_ColumnPropNameInTable="PtapColumn" msprop:Generator_UserColumnName="Ptap" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PTAT" msprop:Generator_ColumnVarNameInTable="columnPTAT" msprop:Generator_ColumnPropNameInRow="PTAT" msprop:Generator_ColumnPropNameInTable="PTATColumn" msprop:Generator_UserColumnName="PTAT" type="xs:double" minOccurs="0" />
+              <xs:element name="Tpi" msprop:Generator_ColumnVarNameInTable="columnTpi" msprop:Generator_ColumnPropNameInRow="Tpi" msprop:Generator_ColumnPropNameInTable="TpiColumn" msprop:Generator_UserColumnName="Tpi" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
